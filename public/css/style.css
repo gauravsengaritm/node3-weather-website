@@ -1,0 +1,9 @@
+body {
+    color: brown;
+    font-family: Arial;
+    max-width: 650;
+    margin: 0 auto;
+}
+img{
+    width: 250px;
+}
