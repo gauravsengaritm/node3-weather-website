@@ -17,7 +17,8 @@ messageTwo.textContent = '';
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
     address = search.value
-    fetch('http://localhost:3000/weather?address='+address).then((responce)=>{
+    //fetch('http://localhost:3000/weather?address='+address).then((responce)=>{
+    fetch('/weather?address='+address).then((responce)=>{
     responce.json().then((data)=>{
         if(data.error){
             messageOne.textContent = data.error;
